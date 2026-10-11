@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#102238">
+    <title>ForgeIQ | Industrial AI Troubleshooting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="topbar-inner">
+            <a class="brand" href="#" aria-label="ForgeIQ home">
+                <span class="brand-icon" aria-hidden="true">⚙</span>
+                <span class="brand-copy">
+                    <strong>ForgeIQ</strong>
+                    <small>INDUSTRIAL INTELLIGENCE</small>
+                </span>
+            </a>
+
+            <div class="connection-area">
+                <span class="connection-label">Local AI system</span>
+                <span id="connectionStatus" class="status-badge warning">
+                    Connecting...
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-container">
+        <section class="hero">
+            <div class="hero-copy">
+                <span class="eyebrow">INDUSTRIAL DIAGNOSTICS</span>
+                <h1>Machine Troubleshooting Agent</h1>
+                <p>
+                    Investigate machine faults, review sensor trends,
+                    and explore evidence-supported root-cause hypotheses.
+                </p>
+                <div class="hero-points">
+                    <span>⚙ Machine analysis</span>
+                    <span>⌁ Sensor trends</span>
+                    <span>✓ Evidence validation</span>
+                </div>
+            </div>
+            <div class="hero-art" aria-hidden="true">
+                <div class="hero-orbit orbit-one"></div>
+                <div class="hero-orbit orbit-two"></div>
+                <div class="hero-machine">⚙</div>
+                <span class="orbit-dot dot-one"></span>
+                <span class="orbit-dot dot-two"></span>
+            </div>
+        </section>
+
+        <section class="panel investigation-panel" aria-labelledby="investigationTitle">
+            <div class="section-heading">
+                <div class="section-icon">⌕</div>
+                <div>
+                    <span class="eyebrow">START HERE</span>
+                    <h2 id="investigationTitle">New investigation</h2>
+                    <p>Enter the machine and describe the fault you observed.</p>
+                </div>
+            </div>
+
+            <form id="investigationForm">
+                <div class="form-grid">
+                    <div class="form-field">
+                        <label for="machineName">Machine name or ID</label>
+                        <input
+                            id="machineName"
+                            name="machine_name"
+                            type="text"
+                            placeholder="e.g. Motor-02 / MTR-002"
+                            autocomplete="off"
+                            required
+                        >
+                        <small>Use a recognizable machine identifier.</small>
+                    </div>
+
+                    <div class="form-field form-field-wide">
+                        <label for="faultDescription">Fault description</label>
+                        <textarea
+                            id="faultDescription"
+                            name="fault_description"
+                            rows="4"
+                            placeholder="Describe abnormal temperature, vibration, noise, current, alarms, or other observations..."
+                            required
+                        ></textarea>
+                        <small>Include measured values and symptoms when available.</small>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <p id="formMessage" class="form-message" role="status">
+                        Ready for a new investigation.
+                    </p>
+                    <button id="submitButton" class="button button-primary" type="submit">
+                        <span aria-hidden="true">⚡</span>
+                        Run investigation
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <section class="panel report-panel" aria-labelledby="reportTitle">
+            <div class="section-heading report-heading">
+                <div class="section-icon">▤</div>
+                <div class="heading-main">
+                    <span class="eyebrow">ANALYSIS RESULTS</span>
+                    <h2 id="reportTitle">Investigation report</h2>
+                    <p>Review the findings and supporting evidence below.</p>
+                </div>
+                <span id="reportStatus" class="status-badge warning">
+                    Awaiting investigation
+                </span>
+            </div>
+
+            <div id="reportContent" class="report-content" aria-live="polite">
+                <div class="report-placeholder">
+                    <div class="placeholder-icon">📋</div>
+                    <h3>Your report will appear here</h3>
+                    <p>
+                        Submit a machine investigation above, or open a saved
+                        investigation from history.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="panel history-panel" aria-labelledby="historyTitle">
+            <div class="history-heading">
+                <div class="section-heading">
+                    <div class="section-icon">◷</div>
+                    <div>
+                        <span class="eyebrow">SAVED RECORDS</span>
+                        <h2 id="historyTitle">Investigation history</h2>
+                        <p>
+                            Open a saved report or temporarily hide an entry
+                            from this view.
+                        </p>
+                    </div>
+                </div>
+
+                <button
+                    id="refreshHistory"
+                    class="button button-secondary"
+                    type="button"
+                >
+                    ↻ Refresh history
+                </button>
+            </div>
+
+            <div class="history-intro">
+                <span class="history-info-icon">ⓘ</span>
+                <p>
+                    Hiding an entry does not delete it. Refresh history to
+                    show saved entries again.
+                </p>
+            </div>
+
+            <div id="historyContent" class="history-content" hidden>
+                <p class="empty-state">Loading investigation history...</p>
+            </div>
+        </section>
+
+        <section class="safety-notice" aria-labelledby="safetyTitle">
+            <div class="safety-icon" aria-hidden="true">🛡️</div>
+            <div>
+                <h2 id="safetyTitle">Operational safety notice</h2>
+                <p>
+                    AI findings support investigation; they do not authorize
+                    maintenance work. Follow site safety procedures and
+                    lockout/tagout (LOTO) requirements. Physical inspections
+                    must be performed by qualified personnel.
+                </p>
+            </div>
+        </section>
+
+        <footer class="page-footer">
+            <span><strong>ForgeIQ</strong> · Industrial AI Troubleshooting Agent</span>
+            <span>Evidence first. Safety always.</span>
+        </footer>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

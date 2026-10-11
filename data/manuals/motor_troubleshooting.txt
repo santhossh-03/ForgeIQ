@@ -1,0 +1,60 @@
+INDUSTRIAL MOTOR TROUBLESHOOTING MANUAL
+
+Machine: Industrial Electric Motor
+
+Problem 1: Motor overheating
+
+Possible causes:
+
+* Excessive mechanical load.
+* Blocked ventilation openings.
+* Damaged bearings.
+* Incorrect power supply.
+
+Recommended inspection:
+
+1. Check whether the motor load exceeds its rated capacity.
+2. Inspect ventilation openings for dust or blockage.
+3. Check bearing condition for unusual noise or vibration.
+4. Have a qualified technician verify the power supply.
+
+Problem 2: Excessive vibration
+
+Possible causes:
+
+* Worn or damaged bearings.
+* Misalignment between the motor and connected equipment.
+* Loose mounting bolts.
+* Rotor imbalance.
+
+Recommended inspection:
+
+1. Inspect mounting bolts.
+2. Check shaft and coupling alignment.
+3. Examine vibration measurements against manufacturer limits.
+4. Inspect bearings if vibration persists.
+
+Problem 3: Motor misalignment
+
+Possible causes:
+
+* Incorrect alignment between the motor shaft and connected equipment.
+* Improper installation after maintenance.
+* Movement of the motor mounting base.
+
+Possible symptoms:
+
+* Increased vibration during operation.
+* Unusual noise near the coupling.
+* Increased bearing stress.
+
+Recommended inspection:
+
+1. Inspect shaft and coupling alignment using an appropriate method.
+2. Inspect the motor mounting base for movement or looseness.
+3. Compare vibration readings with manufacturer limits.
+4. Have qualified maintenance personnel correct any verified misalignment.
+
+Safety:
+
+Disconnect and isolate electrical power before physical inspection. Follow the manufacturer's procedures and site lockout/tagout requirements. Only qualified personnel should perform electrical inspections.

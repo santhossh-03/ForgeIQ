@@ -1,0 +1,1 @@
+"""Database package for the Industrial AI Agent."""

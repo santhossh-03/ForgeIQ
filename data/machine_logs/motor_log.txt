@@ -1,0 +1,10 @@
+
+Machine: Industrial Electric Motor
+Date: 2026-10-09
+
+Timestamp,Temperature_C,Vibration_mm_s,Motor_Current_A,Status
+09:00,65,2.1,8.2,NORMAL
+09:05,68,2.3,8.4,NORMAL
+09:10,74,3.1,9.1,WARNING
+09:15,82,4.8,10.5,WARNING
+09:20,91,7.2,12.8,ALARM

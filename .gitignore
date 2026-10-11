@@ -1,0 +1,46 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Secrets and environment configuration
+.env
+.env.*
+!.env.example
+
+# Local databases and database backups
+database/*.db
+database/*.sqlite
+database/*.sqlite3
+database/*.db-*
+*.sqlite-wal
+*.sqlite-shm
+
+# Model weights and downloaded model files
+*.gguf
+*.safetensors
+*.pt
+*.pth
+*.onnx
+
+# Cache and generated files
+.cache/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+*.log
+
+# IDE and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Generated embedding cache
+data/cache/
